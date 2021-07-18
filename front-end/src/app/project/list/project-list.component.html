@@ -14,6 +14,19 @@
     </div>
 </div>
 
+<div class='create-project card' *ngIf='createClicked'>
+    <div class='card-header'>
+        <a>
+            Create Project
+        </a>
+        <a (click)='onClose()' style='cursor: pointer; float: right' (click)='onCreate()'>
+            <i class="fa fa-times-circle"></i>
+        </a>
+    </div>
+</div>
+
 <div class='create-project-icon'>
-    <i class="fa fa-plus-circle large" style="font-size:64px; color: #28A745;"></i>
+    <a style='cursor: pointer' (click)='onCreate()'>
+        <i class="fa fa-plus-circle" style="font-size:64px; color: #28A745;"></i>
+    </a>
 </div>

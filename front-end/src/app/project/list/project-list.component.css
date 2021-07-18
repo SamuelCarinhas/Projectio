@@ -12,3 +12,13 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.create-project {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 500px;
+    margin-left: -250px;
+    height: 800px;
+    margin-top: -400px;
+}

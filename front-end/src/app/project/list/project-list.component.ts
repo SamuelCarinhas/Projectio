@@ -12,6 +12,7 @@ export class ProjectListComponent implements OnInit, OnDestroy {
 
   sub!: Subscription;
   projects: IProject[] = [];
+  createClicked: boolean = true;
 
   constructor(private projectService: ProjectService) { }
 
@@ -36,6 +37,14 @@ export class ProjectListComponent implements OnInit, OnDestroy {
 
   onEdit(): void {
 
+  }
+
+  onCreate(): void {
+    this.createClicked = true;
+  }
+
+  onClose(): void {
+    this.createClicked = false;
   }
 
 }
